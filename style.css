@@ -1,0 +1,73 @@
+button {
+	cursor: pointer;
+}
+
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 7rem;
+	width: 100%;
+	background-color: #FFF;
+	font-family: 'avenir';
+	font-size: 4rem;
+	padding: 0 0 0 2rem;
+	border-bottom: 1px solid #EEE;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 10rem;
+	width: 100%;
+	background-color: #FFF;
+	font-family: 'avenir';
+	font-size: 2rem;
+	border-bottom: 1px solid #EEE;
+}
+
+.nav-header {
+
+}
+
+.nav-btn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 0 0;
+}
+
+.nav-btn {
+	width: 8rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #514f4f;
+  height: 2rem;
+  border: none;
+}
+
+.nav-btn:hover {
+	color: #949090;
+}
+
+#app {
+	display: grid;
+	grid-gap: 1rem;
+	padding: 1rem;
+	grid-template-columns: repeat(4, 25%);
+}
+
+.artwork-item {
+	width: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.artwork-image {
+	height: 10rem;
+}
