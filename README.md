@@ -1,6 +1,6 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/alexanderela/art-museum-gallery.svg?columns=all)](https://waffle.io/alexanderela/art-museum-gallery)
 
-# Art Museum Gallery is a clean, straightforward example of an art museum display.
+# Art Museum Gallery
 
 ## Art Museum Gallery is a clean, straightforward example of an art museum display.
 
