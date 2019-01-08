@@ -1,7 +1,10 @@
+body {
+	font-family: Avenir,Helvetica,Arial,sans-serif;;
+}
+
 button {
 	cursor: pointer;
 }
-
 
 .header {
 	display: flex;
@@ -55,9 +58,12 @@ button {
 
 #app {
 	display: grid;
-	grid-gap: 1rem;
-	padding: 1rem;
-	grid-template-columns: repeat(4, 25%);
+	grid-gap: 2rem;
+	margin: 0 auto;
+  justify-content: center;
+	padding: 1rem 0 0 0;
+	grid-template-columns: repeat(auto-fit, 16rem);
+	width: 80%;
 }
 
 .artwork-item {
@@ -66,8 +72,35 @@ button {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	margin: 0 auto;
 }
 
 .artwork-image {
-	height: 10rem;
+	max-width: 100%;
+}
+
+.artwork-data-container {
+	margin: 0.5rem 0 0 0;
+}
+
+.art-title {
+	color: #000;
+}
+
+.art-technique {
+	color: #666;
+}
+
+.art-medium {
+	color: #666;
+}
+
+.art-date {
+	color: #999;	
+}
+
+.artwork-data {
+  text-align: center;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.25rem;
 }
