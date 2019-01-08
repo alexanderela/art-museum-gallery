@@ -7,7 +7,9 @@
 	</head>
 	<body>
 		<div id='app'>
-			{{ message }}
+				<p>{{ message }}</p>
+				<input v-model='message'>
+				<button v-on:click='reverseMessage'>Reverse Message</button>
 		</div>
 
 		<script src='index.js'></script>

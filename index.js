@@ -1,8 +1,13 @@
 var app = new Vue({
 	el: '#app',
 	data: {
-		message: 'Hello Vue!'
+		message: 'Well, hello there'
+	},
+	methods: {
+		reverseMessage: function() {
+			this.message = this.message.split('').reverse().join('')
+		}
 	}
 });
 
-app.message = 'I have changed the data'
+// app.todos.push({ text: 'newTodo' })
