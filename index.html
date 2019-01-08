@@ -2,16 +2,24 @@
 <html>
 	<head>
 		<link rel='stylesheet' type= 'text/css' href='reset.css'>
-		<link rel='stylesheet' type= 'text/css' href='index.css'>
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link rel='stylesheet' type= 'text/css' href='style.css'>
 	</head>
 	<body>
+		<div class='header'>
+			The Museum
+		</div>
+		<div class='nav-bar'>
+			<h1 class='nav-header'>Browse Our Collection</h1>
+			<div class='nav-btn-container'>
+				<button class='nav-btn'>All Artworks</button>
+				<button class='nav-btn'>20th Century</button>
+				<button class='nav-btn'>19th Century</button>
+			</div>
+		</div>
 		<div id='app'>
-				<p>{{ message }}</p>
-				<input v-model='message'>
-				<button v-on:click='reverseMessage'>Reverse Message</button>
 		</div>
 
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<script src='index.js'></script>
 	</body>
 </html>
