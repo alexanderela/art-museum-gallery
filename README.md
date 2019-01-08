@@ -13,6 +13,9 @@ Art Museum Gallery is a clean, straightforward example of an art museum display.
 ### 19th Century Artworks view
 ![19th Century Artworks view](./assets/images/app/all.png "19th Century Artworks view")
 
+### Wireframe
+![Wireframe](./assets/images/Wireframe.png "Wireframe")
+
 ## Technologies Used:
 - Vue.js
 
