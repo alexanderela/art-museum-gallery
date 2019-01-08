@@ -8,12 +8,12 @@ Vue.component('artwork-item', {
 	template: `
 	<div>
 		<img class='artwork-image' alt='' src='https://nrs.harvard.edu/urn-3:HUAM:DDC110756_dynmc'/>
-		<p class='artwork-data'>{{ artwork.accessionyear }}</p>
-		<p class='artwork-data'>{{ artwork.title }}</p>
-				<p class='artwork-data'>{{ artwork.people[0].name }}</p>
-		<p class='artwork-data'>{{ artwork.technique }}</p>
-		<p class='artwork-data'>{{ artwork.medium }}</p>
-		<p class='artwork-data'>{{ artwork.dated }}</p>
+		<div class='artwork-data-container'>
+			<p class='artwork-data art-title'>{{ artwork.title }}</p>
+			<p class='artwork-data art-technique'>{{ artwork.technique }}</p>
+			<p class='artwork-data art-medium'>{{ artwork.medium }}</p>
+			<p class='artwork-data art-date'>{{ artwork.dated }}</p>
+		</div>
 	</div>
 	`
 })
