@@ -52,3 +52,22 @@ button {
 .nav-btn:hover {
 	color: #949090;
 }
+
+#app {
+	display: grid;
+	grid-gap: 1rem;
+	padding: 1rem;
+	grid-template-columns: repeat(4, 25%);
+}
+
+.artwork-item {
+	width: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.artwork-image {
+	height: 10rem;
+}

@@ -17,6 +17,19 @@
 			</div>
 		</div>
 		<div id='app'>
+				<artwork-item
+					v-for='item in artworkList'
+					v-bind:artwork='item'
+					v-bind:key='item.id'
+					class='artwork-item'>
+				</artwork-item>
+			<!-- <ol>
+				<artwork-item
+					v-for='item in artworkList'
+					v-bind:artwork='item'
+					v-bind:key='item.objectnumber'>
+				</artwork-item>
+			</ol> -->
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
