@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel='stylesheet' type= 'text/css' href='reset.css'>
+		<link rel='stylesheet' type= 'text/css' href='./utilities/reset.css'>
 		<link rel='stylesheet' type= 'text/css' href='style.css'>
 	</head>
 	<body>
@@ -12,13 +12,16 @@
 			<h1 class='nav-header'>Browse Our Collection</h1>
 			<div class='nav-btn-container'>
 				<button class='nav-btn'>All Artworks</button>
-				<button class='nav-btn'>20th Century</button>
-				<button class='nav-btn'>19th Century</button>
+				<button class='nav-btn'>Color Photos</button>
+				<button class='nav-btn'>Black/White Photos</button>
+				<button class='nav-btn'>Negatives</button>
+				<button class='nav-btn'>Textiles</button>
+				<button class='nav-btn'>Prints</button>
 			</div>
 		</div>
 		<div id='app'>
 				<artwork-item
-					v-for='item in artworkList'
+					v-for='item in artworksList'
 					v-bind:artwork='item'
 					v-bind:key='item.id'
 					class='artwork-item'>
@@ -32,6 +35,7 @@
 			</ol> -->
 		</div>
 
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<script src='index.js'></script>
 	</body>

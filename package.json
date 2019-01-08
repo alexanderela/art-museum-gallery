@@ -1,0 +1,23 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.21"
+  },
+  "repository": {
+    "private": true
+  },
+  "license": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "vue-loader": "^15.5.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
