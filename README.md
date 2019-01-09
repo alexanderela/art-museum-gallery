@@ -16,13 +16,13 @@ Project spec can be found [here](http://frontend.turing.io/projects/final-countd
 
 ## Images:
 ### Desktop View
-![Desktop View](./assets/images/app/desktop.png "Desktop View")
+![Desktop View](./assets/images/desktop.png "Desktop View")
 
 ### Tablet View
-![Tablet View](./assets/images/app/tablet.png "Tablet View")
+![Tablet View](./assets/images/tablet.png "Tablet View")
 
 ### Mobile View
-![Mobile View](./assets/images/app/mobile.png "Mobile View")
+![Mobile View](./assets/images/mobile.png "Mobile View")
 
 ### Wireframe
 ![Wireframe](./assets/images/Wireframe.png "Wireframe")
