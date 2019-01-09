@@ -94,19 +94,19 @@ button {
 	margin: 0.75rem 0 0 0;
 }
 
-.art-title {
+.artwork-title {
 	color: #000;
 }
 
-.art-technique {
-	color: #666;
+.artwork-artist {
+	color: #4d4a4a;
 }
 
-.art-medium {
-	color: #666;
+.artwork-medium {
+	color: #777;
 }
 
-.art-date {
+.artwork-date {
 	color: #999;	
 }
 
