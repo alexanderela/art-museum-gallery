@@ -4,6 +4,7 @@ body {
 
 button {
 	cursor: pointer;
+	outline: none;
 }
 
 .header {
@@ -59,6 +60,19 @@ button {
 	background-color: #514f4f;
 	border: 1px solid #514f4f;
 	color: #FFF;
+}
+
+.buttonDisabled {
+	background-color: #d8d8d8;
+	border: 1px solid #d8d8d8;
+	color: #FFF;
+}
+
+.buttonDisabled:hover {
+	background-color: #d8d8d8;
+	border: 1px solid #d8d8d8;
+	color: #FFF;
+	cursor: auto;
 }
 
 .page-counter {

@@ -18,13 +18,18 @@
 				<button 
 					@click='updateCount'
 					name='previous'
-					class='next-previous previous-btn'
+					class='next-previous'
+					:disabled='count <= 1'
+					:class='{ buttonDisabled: count <= 1 }'
 					>Previous</button>
 					<p class='page-counter'>Page {{ count }} of 10</p>
 				<button 
 					@click='updateCount'
 					name='next'
-					class='next-previous next-btn'>Next</button>
+					class='next-previous'
+					:disabled='count >= 10'
+					:class='{ buttonDisabled: count >= 10 }'
+					>Next</button>
 			</div>
 			<div class='artwork-item-container'>
 				<artwork-item
