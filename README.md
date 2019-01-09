@@ -7,14 +7,14 @@ Art Museum Gallery is a clean, straightforward example of an art museum display.
 [Art Museum Gallery](https://alexanderela.github.io/art-museum-gallery/)
 
 ## Images:
-### All Artworks view
-![All Artworks view](./assets/images/app/all.png "All Artworks view")
+### Desktop View
+![Desktop View](./assets/images/app/desktop.png "Desktop View")
 
-### 20th Century Artworks view
-![20th Century Artworks view](./assets/images/app/all.png "20th Century Artworks view")
+### Tablet View
+![Tablet View](./assets/images/app/tablet.png "Tablet View")
 
-### 19th Century Artworks view
-![19th Century Artworks view](./assets/images/app/all.png "19th Century Artworks view")
+### Mobile View
+![Mobile View](./assets/images/app/mobile.png "Mobile View")
 
 ### Wireframe
 ![Wireframe](./assets/images/Wireframe.png "Wireframe")
