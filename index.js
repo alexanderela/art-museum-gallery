@@ -1,6 +1,3 @@
-// const APIkey = require('./APIKey/APIKey.js').default
-// import APIkey from './APIKey/APIKey.js';
-
 Vue.component('artwork-item', {
 	props: ['artwork'],
 	template: `
