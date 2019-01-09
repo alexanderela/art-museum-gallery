@@ -26,8 +26,7 @@ var app = new Vue({
 		artworksList: []
 	},
 	methods: {
-		checkMediumAndTechnique(artwork) {
-			const { technique, medium } = artwork
+		checkMediumAndTechnique(technique, medium) {
 			if(technique === null) {
 				return medium
 			} else if (medium === null) {
@@ -49,7 +48,7 @@ var app = new Vue({
 				return {
 					image: primaryimageurl,
 					title: title,
-					artist: this.checkArtist(artwork),
+					artist: this.checkArtist(technique, medium),
 					medium: this.checkMediumAndTechnique(artwork),
 					date: dated
 				}	
