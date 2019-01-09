@@ -20,18 +20,20 @@
 					name='previous'
 					class='next-previous previous-btn'
 					>Previous</button>
-					<p class='page-counter'>Page: {{ count }} of 5</p>
+					<p class='page-counter'>Page {{ count }} of 10</p>
 				<button 
 					@click='updateCount'
 					name='next'
 					class='next-previous next-btn'>Next</button>
 			</div>
+			<div class='artwork-item-container'>
 				<artwork-item
 					v-for='item in artworksList'
 					v-bind:artwork='item'
 					v-bind:key='item.id'
 					class='artwork-item'>
 				</artwork-item>
+			</div>
 		</div>
 		<div class='footer'>
 			<span class='copyright'>©2019 Alexander Ela -</span>

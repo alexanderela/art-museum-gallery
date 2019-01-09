@@ -7,8 +7,8 @@ button {
 }
 
 .header {
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: flex-start;
 	height: 7rem;
 	width: 100%;
@@ -31,43 +31,47 @@ button {
 	border-bottom: 1px solid #EEE;
 }
 
-.nav-header {
-
-}
-
-
-.page-counter {
-	font-size: 1rem;
-}
-
-.nav-btn-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 1rem 0 0 0;
-}
-
-.nav-btn {
-	width: 8rem;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #514f4f;
-  height: 2rem;
-  border: none;
-}
-
-.nav-btn:hover {
-	color: #949090;
-}
-
 #app {
-	display: grid;
-	grid-gap: 2rem;
 	margin: 0 auto;
   justify-content: center;
 	padding: 2rem 0 0 0;
-	grid-template-columns: repeat(auto-fit, 16rem);
 	width: 80%;
+}
+
+.next-previous-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	margin: 0 0 1rem 0;
+}
+
+.next-previous {
+	width: 6rem;
+  font-size: 1rem;
+  margin: 0 2rem;
+  border-radius: 3px;
+  border: 1px solid #777;
+  height: 1.75rem;
+}
+
+.next-previous:hover {
+	background-color: #514f4f;
+	color: #FFF;
+	border: 1px solid #514f4f;
+}
+
+.page-counter {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.artwork-item-container {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, 16rem);
+	margin: 0 auto;
+  justify-content: center;
 }
 
 .artwork-item {
@@ -171,4 +175,20 @@ button {
 	.nav-header {
 		font-size: 1.5rem;
 	}
+	
+	.next-previous-container {
+		height: 3rem;
+	}
+
+	.next-previous {
+		width: 6rem;
+	  font-size: 0.85rem;
+	  margin: 0 0.5rem;
+	  height: 1.75rem;
+	}
+
+	.page-counter {
+		font-size: 0.8rem;
+	}
+
 }
