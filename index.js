@@ -15,6 +15,8 @@ Vue.component('artwork-item', {
 		</div>
 		<div class='artwork-data-container'>
 			<p class='artwork-data art-title'>{{ artwork.title }}</p>
+			<p v-if='artwork.people' class='artwork-data art-artist-known'>{{ artwork.people[0].name }}</p>
+			<p v-else class='artwork-data art-artist-unknown'>Artist Unknown</p>
 			<p class='artwork-data art-technique'>{{ artwork.technique }}</p>
 			<p class='artwork-data art-medium'>{{ artwork.medium }}</p>
 			<p class='artwork-data art-date'>{{ artwork.dated }}</p>
