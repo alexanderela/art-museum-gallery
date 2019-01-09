@@ -35,6 +35,11 @@ button {
 
 }
 
+
+.page-counter {
+	font-size: 1rem;
+}
+
 .nav-btn-container {
 	display: flex;
 	align-items: center;
