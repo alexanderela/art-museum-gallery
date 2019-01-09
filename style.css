@@ -8,57 +8,57 @@ button {
 
 .header {
 	align-items: center;
-	display: flex;
-	justify-content: flex-start;
-	height: 7rem;
-	width: 100%;
-	background-color: #FFF;
-	font-size: 4rem;
-	padding: 0 0 0 2rem;
 	border-bottom: 1px solid #EEE;
+	background-color: #FFF;
+	display: flex;
+	font-size: 4rem;
+	height: 7rem;
+	justify-content: flex-start;
+	padding: 0 0 0 2rem;
+	width: 100%;
 }
 
 .nav-bar {
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 5rem;
-	width: 100%;
 	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+	display: flex;
+	flex-direction: column;
 	font-family: 'avenir';
 	font-size: 2rem;
-	border-bottom: 1px solid #EEE;
+	height: 5rem;
+	justify-content: center;
+	width: 100%;
 }
 
 #app {
-	margin: 0 auto;
   justify-content: center;
+	margin: 0 auto;
 	padding: 2rem 0 0 0;
 	width: 80%;
 }
 
 .next-previous-container {
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
 	height: 5rem;
+	justify-content: center;
 	margin: 0 0 1rem 0;
 }
 
 .next-previous {
-	width: 6rem;
-  font-size: 1rem;
-  margin: 0 2rem;
-  border-radius: 3px;
   border: 1px solid #777;
+  border-radius: 3px;
+  font-size: 1rem;
   height: 1.75rem;
+  margin: 0 2rem;
+	width: 6rem;
 }
 
 .next-previous:hover {
 	background-color: #514f4f;
-	color: #FFF;
 	border: 1px solid #514f4f;
+	color: #FFF;
 }
 
 .page-counter {
@@ -70,32 +70,32 @@ button {
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: repeat(auto-fit, 16rem);
-	margin: 0 auto;
   justify-content: center;
+	margin: 0 auto;
 }
 
 .artwork-item {
-	width: 15rem;
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	margin: 0 auto;
+	width: 15rem;
 }
 
 .artwork-image {
-	max-width: 100%;
 	border-radius: 3px;
+	max-width: 100%;
 }
 
 .no-image-container {
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 6rem;
 	border: 1px solid #666;
 	border-radius: 3px;
+	display: flex;
+	height: 6rem;
+	justify-content: center;
+	width: 100%;
 }
 
 .artwork-data-container {
@@ -119,21 +119,21 @@ button {
 }
 
 .artwork-data {
-  text-align: center;
-  margin: 0 0 0.25rem 0;
   line-height: 1.25rem;
+  margin: 0 0 0.25rem 0;
+  text-align: center;
 }
 
 .footer {
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	height: 7rem;
-	width: 100%;
 	background-color: #FFF;	
-	margin: 1rem 0 0;
-	font-size: 1rem;
 	border-top: 1px solid #EEE;
+	display: flex;
+	font-size: 1rem;
+	height: 7rem;
+	justify-content: center;
+	margin: 1rem 0 0;
+	width: 100%;
 }
 
 .copyright {
@@ -148,7 +148,6 @@ button {
 @media screen and (max-width: 1040px) {
 	#app {
 		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-		/*width: 100%;*/
 	}
 }
 
@@ -181,10 +180,10 @@ button {
 	}
 
 	.next-previous {
-		width: 6rem;
 	  font-size: 0.85rem;
-	  margin: 0 0.5rem;
 	  height: 1.75rem;
+	  margin: 0 0.5rem;
+		width: 6rem;
 	}
 
 	.page-counter {
