@@ -5,9 +5,14 @@ Vue.component('artwork-item', {
 	props: ['artwork'],
 	template: `
 	<div>
-		<img 
+		<img
+			v-if='artwork.primaryimageurl !== null' 
 			class='artwork-image' 
 			v-bind:src='artwork.primaryimageurl'/>
+		<div v-else
+			class='no-image-container'>
+			<p class='no-image'>No image available</p>
+		</div>
 		<div class='artwork-data-container'>
 			<p class='artwork-data art-title'>{{ artwork.title }}</p>
 			<p class='artwork-data art-technique'>{{ artwork.technique }}</p>
