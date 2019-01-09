@@ -11,12 +11,10 @@ Vue.component('artwork-item', {
 			<p class='no-image'>No image available</p>
 		</div>
 		<div class='artwork-data-container'>
-			<p class='artwork-data art-title'>{{ artwork.title }}</p>
-			<p v-if='artwork.people' class='artwork-data art-artist-known'>{{ artwork.people[0].name }}</p>
-			<p v-else class='artwork-data art-artist-unknown'>Artist Unknown</p>
-			<p class='artwork-data art-technique'>{{ artwork.technique }}</p>
-			<p class='artwork-data art-medium'>{{ artwork.medium }}</p>
-			<p class='artwork-data art-date'>{{ artwork.dated }}</p>
+			<p class='artwork-data artwork-title'>{{ artwork.title }}</p>
+			<p class='artwork-data artwork-artist'>{{ artwork.artist }}</p>
+			<p class='artwork-data artwork-medium'>{{ artwork.medium }}</p>
+			<p class='artwork-data artwork-date'>{{ artwork.date }}</p>
 		</div>
 	</div>
 	`
@@ -28,22 +26,35 @@ var app = new Vue({
 		artworksList: []
 	},
 	methods: {
+		checkMediumAndTechnique(artwork) {
+			const { technique, medium } = artwork
+			if(technique === null) {
+				return medium
+			} else if (medium === null) {
+				return technique
+			}
+		},
+		checkArtist(artwork) {
+			const artworkKeys = Object.keys(artwork)
+			if(artworkKeys.includes('people')) {
+				return artwork.people[0].name
+			} else {
+				return 'Artist Unknown'
+			}
+		},
 		cleanArtworkData(fetchedArtworkData) {
 			const cleanedArtworkData = fetchedArtworkData.map(artwork => {
 
 			const { primaryimageurl, title, people, technique, medium, dated } = artwork
-
 				return {
 					image: primaryimageurl,
 					title: title,
-					artist: 'Artist Unknown',
-					medium: technique || medium,
+					artist: this.checkArtist(artwork),
+					medium: this.checkMediumAndTechnique(artwork),
 					date: dated
-				}
-				
+				}	
 			})
 
-			console.log(cleanedArtworkData)
 			return cleanedArtworkData
 		}
 	},
