@@ -48,8 +48,8 @@ var app = new Vue({
 				return {
 					image: primaryimageurl,
 					title: title,
-					artist: this.checkArtist(technique, medium),
-					medium: this.checkMediumAndTechnique(artwork),
+					artist: this.checkArtist(artwork),
+					medium: this.checkMediumAndTechnique(technique, medium),
 					date: dated
 				}	
 			})
