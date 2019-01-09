@@ -23,9 +23,18 @@ Vue.component('artwork-item', {
 var app = new Vue({
 	el: '#app',
 	data: {
-		artworksList: []
+		artworksList: [],
+		count: 1,
 	},
 	methods: {
+		updateCount: function(e) {
+			if(e.target.name === 'previous' && this.count > 1) {
+				this.count -= 1
+			} else if(e.target.name === 'next' && this.count < 10) {
+				this.count += 1				
+			}
+			this.updateVisibleArtworksOnPageChange()
+		},
 		checkMediumAndTechnique(technique, medium) {
 			if(technique === null) {
 				return medium
@@ -55,10 +64,15 @@ var app = new Vue({
 			})
 
 			return cleanedArtworkData
+		},
+		updateVisibleArtworksOnPageChange() {
+			axios.get(`https://api.harvardartmuseums.org/object?page=${this.count}&height=150&width=150&apikey=589656b0-12bc-11e9-90d1-473127181d8c`)
+				.then(response => { this.artworksList = this.cleanArtworkData(response.data.records) })
+				.catch(error => console.log(error))			
 		}
 	},
 	mounted() {
-		axios.get(`https://api.harvardartmuseums.org/object?size=100&height=150&width=150&apikey=589656b0-12bc-11e9-90d1-473127181d8c`)
+		axios.get(`https://api.harvardartmuseums.org/object?page=1&height=150&width=150&apikey=589656b0-12bc-11e9-90d1-473127181d8c`)
 			.then(response => { this.artworksList = this.cleanArtworkData(response.data.records) })
 			.catch(error => console.log(error))
 	}
