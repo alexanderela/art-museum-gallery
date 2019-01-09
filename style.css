@@ -23,7 +23,7 @@ button {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	height: 10rem;
+	height: 5rem;
 	width: 100%;
 	background-color: #FFF;
 	font-family: 'avenir';
@@ -60,7 +60,7 @@ button {
 	grid-gap: 2rem;
 	margin: 0 auto;
   justify-content: center;
-	padding: 1rem 0 0 0;
+	padding: 2rem 0 0 0;
 	grid-template-columns: repeat(auto-fit, 16rem);
 	width: 80%;
 }
