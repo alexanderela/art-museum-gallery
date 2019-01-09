@@ -4,7 +4,7 @@
 The Ela Museum utilizes the Harvard Art Museums API to display a clean, straightforward example of a collection of textiles, works on paper, color and black/white photographs, and negatives.  It is primarily built using Vue.js and CSS3.
 
 ### Deployed Application
-[The Ela Museum](https://alexanderela.github.io/art-museum-gallery/)
+[The Ela Museum](https://jovial-shaw-0f147d.netlify.com/)
 
 ## Technologies Used:
 - Vue.js
