@@ -31,8 +31,7 @@ var app = new Vue({
 		artworksList: []
 	},
 	mounted() {
-		// axios.get(`https://api.harvardartmuseums.org/object?size=100&height=150&width=150&apikey=${APIKey}`)
-		axios.get(`https://api.harvardartmuseums.org/object?size=100&height=150&width=150&apikey=589656b0-12bc-11e9-90d1-473127181d8c`)
+		axios.get(`https://api.harvardartmuseums.org/object?size=100&height=150&width=150&apikey=${APIKey}`)
 			.then(response => { this.artworksList = response.data.records })
 			.catch(error => console.log(error))
 	}
